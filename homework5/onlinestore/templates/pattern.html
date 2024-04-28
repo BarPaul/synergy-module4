@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <title>Домашнее задание № 6. Раздел телефонов {{ name }}</title>
+</head>
+<body>
+    <h1>Интернет магазин "KISLOROD"</h1>
+    <h2>Телефоны {{ name }}</h2>
+    <table>
+        <thead>
+            <tr>
+                {% for column in columns %}
+                <td>{{ column }}</td>
+                {% endfor %}
+            </tr>
+        </thead>
+        <tbody>
+            {% for row in rows %}
+            <tr>
+                <td>{{ name }} {{ row.name }}</td>
+                <td>{{ row.color }}</td>
+                <td>{{ row.ram }} MB</td>
+                <td>{{ row.disk  }} MB</td>
+                <td>{{ row.price }} ₽</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+    <a href="/" class="btn">В меню</a>
+</body>
+</html>

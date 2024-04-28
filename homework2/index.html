@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Домашнее задание № 2</title>
+        <style>
+            * {
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+            ::-webkit-scrollbar {
+                width: 0;
+            }
+            body {
+                height: 100vh;
+                background-image: linear-gradient(120deg, lightgreen, green 60%, black 98%);
+            }
+            .container {
+                padding: 50px;
+                background-color: rgba(255, 255, 255, 0.185);
+                height: 85vh;
+                border-radius: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            h1 {
+                color: blueviolet;
+            }
+            h2 {
+                color: #7fff85;
+            }
+            p {
+                font-size: 18px;
+            }
+            img {
+                transition: all 1s ease-in-out;
+                transform: scale(1.1);
+                border-radius: 15px;
+            }
+            img:hover {
+                transform: scale(1.3);
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Это большой заголовок -->
+            <h1>Hello, World!</h1>
+            <!-- Это заголовок поменьше -->
+            <h2>Первые слова программиста</h2>
+            <img src="code.png" alt="Пример кода" />
+            <p>Этот код написан на <code>HTML</code></p>
+            <p>Используемые теги в этом коде:</p>
+            <ul>
+                <li>
+                    <p>html</p>
+                    <ul>
+                        <li>
+                            <p>head</p>
+                            <ul>
+                                <li>title</li>
+                            </ul>
+                        </li>
+                        <li>
+                            <p>body</p>
+                            <ul>
+                                <li>h1</li>
+                                <li>h2</li>
+                                <li>img</li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </body>
+</html>
+`
